@@ -44,7 +44,7 @@ class _CoinRatesState extends State<CoinRates> {
               case ConnectionState.waiting:
                 return Center(
                     child: CircularProgressIndicator(
-                  backgroundColor: Colors.blueAccent,
+                  backgroundColor: Colors.tealAccent[200],
                 ));
               case ConnectionState.done:
                 if (snapshot.hasError) return Text('Error: ${snapshot.error}');

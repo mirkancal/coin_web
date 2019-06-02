@@ -9,6 +9,7 @@ class App extends StatelessWidget {
       title: 'Türk Coin Borsası',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        accentColor: Colors.blueAccent,
         fontFamily: "Montserrat",
         indicatorColor: Colors.blueAccent,
         brightness: Brightness.dark,
