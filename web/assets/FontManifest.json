@@ -8,10 +8,10 @@
     ]
   },
   {
-    "family": "Montserrat",
+    "family": "Lato",
     "fonts": [
       {
-        "asset": "Montserrat-Regular.ttf"
+        "asset": "Lato-Regular.ttf"
       }
     ]
   }

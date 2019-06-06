@@ -1,3 +1,4 @@
+import 'package:coin_web/bloc/coin_bloc_provider.dart';
 import 'package:coin_web/widget/coin_rates.dart';
 import 'package:flutter_web/material.dart';
 
@@ -10,9 +11,8 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         accentColor: Colors.blueAccent,
-        fontFamily: "Montserrat",
-        indicatorColor: Colors.blueAccent,
         brightness: Brightness.dark,
+        fontFamily: "Lato",
       ),
       home: MyHomePage(),
     );
@@ -42,12 +42,12 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: TabBarView(
           children: <Widget>[
-            CoinRates(
-              coinMarket: 'koineks',
+            CoinBlocProvider(
+              child: CoinRates('koineks'),
             ),
-            CoinRates(
-              coinMarket: 'paribu',
-            ),
+            CoinBlocProvider(
+              child: CoinRates('paribu'),
+            )
           ],
         ),
       ),
